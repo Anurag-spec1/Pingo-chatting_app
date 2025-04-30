@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+  <carbon.widget.TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hey user"
+      android:textSize="20sp"
+      android:layout_margin="15dp"
+      android:textColor="@color/white"
+      android:fontFamily="@font/productsans"
+      android:id="@+id/welcomeText"
+      android:background="#516F6C"
+      android:padding="15dp"
+      app:carbon_cornerRadius="20dp"
+      app:carbon_elevation="20dp"/>
+
+    <carbon.widget.ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/userl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/userImage"
+        app:carbon_cornerRadius="20dp"/>
+
+
+    <carbon.widget.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Users"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/productsans"
+        android:id="@+id/constChatWith"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/constChatWith"/>
+
+
+
+
+  <com.github.ybq.android.spinkit.SpinKitView
+      android:id="@+id/spinKit"
+      style="@style/SpinKitView.FadingCircle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      app:SpinKit_Color="@color/carbon_orange_a400" />
+
+  <carbon.widget.ImageView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+    android:layout_toStartOf="@+id/userImage"
+      android:layout_marginTop="25dp"
+      android:layout_marginEnd="15dp"
+    android:src="@drawable/logout"
+    android:padding="5dp"
+    android:id="@+id/logoutImage"/>
+
+
+
+</RelativeLayout>
