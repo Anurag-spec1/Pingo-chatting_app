@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Primary colors -->
+    <color name="primary_500">#6200EE</color>
+    <color name="primary_600">#3700B3</color>
+
+    <!-- Background colors -->
+    <color name="background_light">#FAFAFA</color>
+
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_stroke">#E0E0E0</color>
+    <color name="input_hint">#9E9E9E</color>
+    <color name="input_focused_stroke">#6200EE</color> <!-- Primary color -->
+
+    <color name="carbon_blue_grey_900">#263238</color>
+    <color name="carbon_blue_grey_800">#37474F</color>
+    <color name="carbon_blue_grey_700">#455A64</color>
+    <color name="carbon_teal_a400">#1DE9B6</color>
+
+    <!-- Text colors -->
+    <color name="gray_600">#757575</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_200">#EEEEEE</color>
+
+    <!-- Accent colors -->
+    <color name="accent_200">#B388FF</color>
+    <color name="typing_indicator">#9E9E9E</color>
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add this to your res/values/styles.xml -->
+    <style name="ChatInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Background & Border -->
+        <item name="boxBackgroundColor">@color/input_background</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+
+        <!-- Hint & Text Styling -->
+        <item name="hintTextColor">@color/input_hint</item>
+        <item name="android:textColorHint">@color/input_hint</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+
+        <!-- Padding & Margins -->
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+</resources>

@@ -27,6 +27,7 @@ class RecyclerViewAdapter(
         val statusText: TextView = itemView.findViewById(R.id.statusText)
         val newMessageDot: ImageView = itemView.findViewById(R.id.newMessageDot)
         val requestButton: Button = itemView.findViewById(R.id.requestButton)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
@@ -48,6 +49,7 @@ class RecyclerViewAdapter(
                 holder.statusIndicator.setColorFilter(ContextCompat.getColor(context, android.R.color.darker_gray))
                 holder.statusText.text = "Offline"
             }
+
             else -> {
                 holder.statusIndicator.setColorFilter(ContextCompat.getColor(context, android.R.color.holo_orange_light))
                 holder.statusText.text = "Away"

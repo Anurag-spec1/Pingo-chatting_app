@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:src="@drawable/userl"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:tint="@color/white"
         android:id="@+id/userLogo"/>
 
@@ -26,7 +26,7 @@
         android:textSize="40sp"
         android:id="@+id/welcomeText"
         android:layout_below="@+id/userLogo"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"/>
 
     <carbon.widget.TextView
@@ -47,7 +47,7 @@
         android:layout_below="@+id/loginText"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:padding="20dp"
         android:hint="Gmail"
         android:textColorHint="@color/white"
@@ -71,18 +71,18 @@
         app:carbon_elevation="0dp"
         android:background="@drawable/rounded_edittext"/>
 
-   <carbon.widget.CheckBox
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Remember me"
-       android:textColor="@color/white"
-       android:layout_below="@id/passwordEditText"
-       android:layout_marginStart="30dp"
-       android:layout_marginTop="15dp"
-       android:fontFamily="@font/productsans"
-       android:textSize="17sp"
-       android:checked="false"
-       android:id="@+id/isCheck"/>
+    <carbon.widget.CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="@color/white"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/productsans"
+        android:textSize="17sp"
+        android:checked="false"
+        android:id="@+id/isCheck"/>
 
 
     <carbon.widget.Button
@@ -90,6 +90,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonLogin"
         android:text="Login"
+        android:layout_marginTop="50dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:paddingStart="45dp"
@@ -98,7 +99,7 @@
         android:textSize="18sp"
         app:carbon_cornerRadius="30dp"
         app:carbon_elevation="10dp"
-        android:layout_above="@id/signupText"
+        android:layout_below="@+id/isCheck"
         android:layout_centerHorizontal="true" />
 
     <carbon.widget.TextView
@@ -108,9 +109,9 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         android:layout_marginBottom="50dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/buttonLogin"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/signupText"/>
 
 </RelativeLayout>

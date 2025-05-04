@@ -1,6 +1,7 @@
 package com.anurag.chatese
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -10,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.anurag.chatese.databinding.ActivityChatBinding
 import com.anurag.chatese.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -17,6 +19,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import kotlin.io.encoding.Base64
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var userList: ArrayList<UserModel>
     private lateinit var adapter: RecyclerViewAdapter
+    private lateinit var sharedPreferences: SharedPreferences
     private var currentUid: String? = null
 
     private val handler = Handler(Looper.getMainLooper())
@@ -49,13 +53,21 @@ class MainActivity : AppCompatActivity() {
         binding.spinKit.visibility = View.VISIBLE
 
         binding.logoutImage.setOnClickListener {
+            // Clear shared preferences
             val editor = getSharedPreferences("loginPrefs", MODE_PRIVATE).edit()
             editor.putBoolean("rememberMe", false)
             editor.apply()
+
+            // Sign out from Firebase
             firebaseAuth.signOut()
             updateUserStatus("offline")
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+
+            // Create intent for LoginActivity and clear stack
+            val intent = Intent(this, LoginActivity::class.java).apply {
+            }
+
+            startActivity(intent)
+            finishAffinity()
         }
 
         userList = ArrayList()
@@ -73,7 +85,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        finish()
+        val intent = Intent(this, MainActivity::class.java).apply {
+        }
+
+        startActivity(intent)
+        finishAffinity()
     }
 
     private fun setupUserPresence() {
@@ -201,5 +217,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
-

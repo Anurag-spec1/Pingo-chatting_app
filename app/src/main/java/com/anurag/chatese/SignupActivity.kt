@@ -1,6 +1,7 @@
 package com.anurag.chatese
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var database: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,11 +29,13 @@ class SignupActivity : AppCompatActivity() {
             val password = binding.passwordEditText2.text.toString().trim()
             val name = binding.nameEditText2.text.toString().trim()
 
+
+
+
             if (email.isNotEmpty() && password.isNotEmpty() && name.isNotEmpty()) {
                 firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
                         val uid = firebaseAuth.currentUser?.uid
-
                         val userMap = hashMapOf(
                             "name" to name
                         )
