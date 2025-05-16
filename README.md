@@ -2,6 +2,7 @@
 > Pingo is a real-time chat application built using Kotlin, Firebase, and XML-based UI layouts. It supports user authentication, messaging, online status, and more.
 
 🚀 Features
+
 🔐 User Authentication (Firebase Auth)
 
 💬 Real-time Messaging (Firebase Realtime Database / Firestore)
