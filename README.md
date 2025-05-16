@@ -3,12 +3,12 @@
 
 🚀 Features
 
-🔐 User Authentication (Firebase Auth)                                                                                                                                                                                   
-💬 Real-time Messaging (Firebase Realtime Database / Firestore)                                                                                                                                                          
-✅ Online/Offline Status                                                                                                                                                                                                 
-🕓 Chat Timestamps & Read Receipts                                                                                                                                                                                       
-🧑‍🤝‍🧑 1-to-1 Chat Support                                                                                                                                                                                                   
-🌐 Built with Firebase and Kotlin                                                                                                                                                                                        
+>🔐 User Authentication (Firebase Auth)                                                                                                                                                                                  
+>💬 Real-time Messaging (Firebase Realtime Database / Firestore)                                                                                                                                                         
+>✅ Online/Offline Status                                                                                                                                                                                                
+>🕓 Chat Timestamps & Read Receipts                                                                                                                                                                                      
+>🧑‍🤝‍🧑 1-to-1 Chat Support                                                                                                                                                                                                  
+>🌐 Built with Firebase and Kotlin                                                                                                                                                                                       
 
 🛠️ Tech Stack
 
