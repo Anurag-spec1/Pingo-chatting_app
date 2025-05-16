@@ -3,17 +3,20 @@
 
 🚀 Features
 
-🔐 User Authentication (Firebase Auth)
+🔐 User Authentication (Firebase Auth)                                                                                                                                                                                   
+💬 Real-time Messaging (Firebase Realtime Database / Firestore)                                                                                                                                                          
+✅ Online/Offline Status                                                                                                                                                                                                 
+🕓 Chat Timestamps & Read Receipts                                                                                                                                                                                       
+🧑‍🤝‍🧑 1-to-1 Chat Support                                                                                                                                                                                                   
+🌐 Built with Firebase and Kotlin                                                                                                                                                                                        
 
-💬 Real-time Messaging (Firebase Realtime Database / Firestore)
+🛠️ Tech Stack
 
-✅ Online/Offline Status
+>Language: Kotlin                                                                                                                                                                                                         
+>UI: Android XML Layouts                                                                                                                                                                                                  
+>Backend: Firebase (Auth, Firestore/Realtime DB, Storage, Cloud Messaging)                                                                                                                                                
 
-🕓 Chat Timestamps & Read Receipts
-
-🧑‍🤝‍🧑 1-to-1 Chat Support
-
-🌐 Built with Firebase and Kotlin
+📸 Screenshots
 
 ![Pingo - Chatting App](https://github.com/user-attachments/assets/4c5f67c0-4b2c-4849-84e3-aceab10b9c48)
 
